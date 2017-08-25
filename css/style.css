@@ -1,0 +1,21 @@
+body {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "PTSans", "Arial", sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #000000;	
+}
+
+.advantages-item h3 {
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: bold;
+	color: #f7f4f1;
+}
