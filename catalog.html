@@ -2,11 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
         <title>Средства для ухода</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="inner-page">
         <header class="main-header">
             <nav class="header-nav">
                 <a class="logo-small" href="index.html"><img src="img/inner-logo.png" alt="Барбершоп" width="111" height="24"></a>
@@ -39,27 +40,54 @@
                     <fieldset>
                         <legend>Производители:</legend>
                         <ul>
-                            <li class="filter-option"><label><input type="checkbox" name="baxter" class="visually-hidden" checked>Baxter California</label></li>
-                            <li class="filter-option"><label><input type="checkbox" name="Natty" class="visually-hidden">MR Natty</label></li>
-                            <li class="filter-option"><label><input type="checkbox" name="Suavecito" class="visually-hidden" checked>Suavecito</label></li>
-                            <li class="filter-option"><label><input type="checkbox" name="Malin" class="visually-hidden">Malin+Goetz</label></li>
-                            <li class="filter-option"><label><input type="checkbox" name="Murray" class="visually-hidden">Murray's</label></li>
-                            <li class="filter-option"><label><input type="checkbox" name="Americancrew" class="visually-hidden" checked>American Crew</label></li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="baxter" class="visually-hidden filter-input" id="filter-baxter" checked>
+                                <label for="filter-baxter">Baxter California</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="Natty" class="visually-hidden filter-input" id="filter-natty">
+                                <label for="filter-natty">MR Natty</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="Suavecito" class="visually-hidden filter-input" id="filter-suavecito" checked>
+                                <label for="filter-suavecito">Suavecito</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="Malin" class="visually-hidden filter-input" id="filter-malin">
+                                <label for="filter-malin">Malin+Goetz</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="Murray" class="visually-hidden filter-input" id="filter-murray">
+                                <label for="filter-murray">Murray's</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="checkbox" name="Americancrew" class="visually-hidden filter-input" id="filter-americancrew" checked>
+                                <label for="filter-americancrew">American Crew</label>
+                            </li>
                         </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Группы товаров:</legend> 
                         <ul>
-                            <li><label><input type="radio" name="group" value="shaving">Бритвенные принадлежности</label></li>
-                            <li><label><input type="radio" name="group" value="hair-care" checked>Средства для ухода</label></li>
-                            <li><label><input type="radio" name="group" value="accesories">Аксессуары</label></li>
+                            <li class="filter-option">
+                                <input type="radio" name="group" value="shaving" class="visually-hidden filter-input" id="filter-shave">
+                                <label for="filter-shave">Бритвенные принадлежности</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="radio" name="group" value="hair-care" class="visually-hidden filter-input" id="filter-care"checked>
+                                <label for="filter-care">Средства для ухода</label>
+                            </li>
+                            <li class="filter-option">
+                                <input type="radio" name="group" value="accesories" class="visually-hidden filter-input"  id="filter-accessories">
+                                <label for="filter-accessories">Аксессуары</label>
+                            </li>
                         </ul>
                     </fieldset>
-                    <button type="submit">Показать</button>
+                    <button type="submit" class="button">Показать</button>
                 </form>
             </section>
 
-            <section class="Каталог">
+            <section class="catalog">
                 <h2 class="visually-hidden">Список средств для ухода</h2>
                 <ul class="catalog-list">
                     <li class="catalog-item">
@@ -73,7 +101,7 @@
                         </a>
                         <p class="goods-item-buy">
                             <b>2 900 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
             
@@ -88,7 +116,7 @@
                         </a>
                         <p class="goods-item-buy">
                             <b>750 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
              
@@ -103,7 +131,7 @@
                          </a>
                         <p class="goods-item-buy">
                             <b>250 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
 
@@ -118,7 +146,7 @@
                         </a>
                         <p class="goods-item-buy">
                             <b>500 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
 
@@ -133,7 +161,7 @@
                         </a>
                         <p class="goods-item-buy">
                             <b>300 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
 
@@ -148,7 +176,7 @@
                         </a>
                         <p class="goods-item-buy">
                             <b>3 900 р</b>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="button" href="#">Купить</a>
                         </p>
                     </li>
                 </ul>
@@ -158,7 +186,7 @@
                 <h2 class="visually-hidden">Навигация по страницам</h2>  
                 <ul class="pagination-list">
                     <li class="pagination-item"><a href="#">1</a></li>
-                    <li class="pagination-item pagination-item-selected">2</li>
+                    <li class="pagination-item pagination-item-selected"><a>2</a></li>
                     <li class="pagination-item"><a href="#">3</a></li>
                     <li class="pagination-item"><a href="#">4</a></li>
                 </ul>
@@ -166,11 +194,13 @@
         </main>
 
         <footer class="main-footer">
-            <p>Барбершоп "Бородинский"<br>  
-                Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8 
-                <a href="map.html">Как нас найти?</a> 
-                Телефон +7(495)666-02-66
-            </p> 
+            <div class="footer-contacts">
+                <p>Барбершоп "Бородинский"<br>  
+                    Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8<br> 
+                    <a href="map.html">Как нас найти?</a><br>  
+                    Телефон +7(495)666-02-66
+                </p> 
+            </div>
             <div class="social-media">
                 <b>Давайте дружить!</b>
                 <ul>
@@ -179,25 +209,28 @@
                     <li><a class="social-button" href="#">Инстаграм</a></li>
                 </ul>
             </div>
-            <p>
-                Разработано:
-                <a class="btn" href="#">HTML ACADEMY</a>
-            </p>
+            <div class="footer-copyrite">
+                <p>Разработано:
+                    <a class="button" href="#">HTML ACADEMY</a>
+                </p>
+            </div>
         </footer>
-        
         <section class="modal modal-login">
             <h2>Личный кабинет</h2>
             <p>Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="login-form-login">Логин</label>
-                <input id="login-form-login" type="text" name="login" placeholder="Логин">
-                <label class="visually-hidden" for="login-form-password">Логин</label>
-                <input id="login-form-password" type="password" name="password" placeholder="Пароль">
                 <p>
-                    <label><input type="checkbox">Запомнить меня</label>
+                    <label class="visually-hidden" for="login-form-login">Логин</label>
+                    <input id="login-form-login" type="text" name="login" placeholder="Логин">
+                </p>
+                    <label class="visually-hidden" for="login-form-password">Пароль</label>
+                    <input id="login-form-password" type="password" name="password" placeholder="Пароль">
+                </p>
+                <p>
+                    <label class="login-checkbox"><input type="checkbox">Запомнить меня</label>
                     <a href="#">Я забыл пароль!</a>
                 </p>
-                <button type="submit">Войти</button>
+                <button type="submit" class="button">Войти</button>
             </form>
             <button type="button" class="modal-close">Закрыть</button>
         </section>
