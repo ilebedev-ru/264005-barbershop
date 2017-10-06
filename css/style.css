@@ -43,7 +43,12 @@ img {
 }
 
 .button {
+	display: inline-block;
+	
+	height: 43px;
+	
 	font: inherit;
+	line-height: 43px;
 
 	text-align: center;
 	vertical-align: middle;
@@ -136,6 +141,26 @@ img {
  {
 	background-color: #242424;
 }
+
+.main-enter .login-link {
+	position: relative;
+
+	padding-left: 50px;
+}
+
+.login-link:before {
+	content: "";
+
+	position: absolute;
+	top: 29px;
+	left: 24px;
+
+	width: 16px;
+	height: 16px;
+
+	background-image: url(../img/login.svg);
+	opacity: 0.3;
+	}
 
 .advantages-list {
 	margin: 0;
@@ -250,12 +275,25 @@ img {
 }
 
 .main-footer {
+	
 	color: #ffffff;
 
 	background-color: 202020;
 	background-image: url("../img/footer-bg.jpg");
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.main-footer .container {
+	display: flex;
+	/*justify-content: space-between;*/
+}
+
+
+
+
+.footer-contacts {
+	width: 310px;
 }
 
 .footer-contacts a {
@@ -269,6 +307,7 @@ img {
 }
 
 .social-media {
+	width: 300px;
 	text-align: center;
 }
 
@@ -281,7 +320,9 @@ img {
 }
 
 .footer-copyrite {
+	width: 140px;
 	text-align: center;
+	margin-left: auto;
 }
 
 .footer-copyrite .button:hover,
@@ -291,10 +332,15 @@ img {
 	background-color: #ffffff;
 }
 
+
+/* -----------Форма обратной связи-------------------*/
+
 .modal {
+	position: relative;
+
 	color: #000000;
 
-	background-color: f7f4f1;
+	background-color: #f7f4f1;
 	background-image: url("../img/gradient-background.jpg");
 	background-position: 0 0;
 	background-repeat: repeat;
@@ -306,12 +352,28 @@ img {
 }
 
 .modal h2 {
+	margin: 0;
+	padding: 0;
+
 	font-size: 30px;
 	line-height: 42px;
 }
 
+.modal-login {
+	max-width: 460px;
+	padding: 60px 0;
+}
+
+.modal-login-wrapper {
+	max-width: 300px;
+	margin: auto;
+}
+
+
 .login-form input[type="text"],
 .login-form input[type="password"] {
+	width: 100%;
+
 	font: inherit;
 	color: #000000;
 	text-transform: uppercase;
@@ -329,7 +391,30 @@ img {
 	color: #663d15;
 }
 
-/* Стили для страницы каталога*/
+.login-form .button {
+	width: 100%;
+}
+
+/* -----------Карта-------------------*/
+
+.map {
+	max-width: 780px;
+	padding: 5px;
+
+	box-sizing: border-box;
+
+}
+
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: -70px;
+}
+
+
+
+/* -----------Стили для страницы каталога-------------------*/
 
 .page-title {
 	font-size: 30px;

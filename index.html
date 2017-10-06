@@ -21,7 +21,7 @@
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>    
                         <ul class="main-enter">
-                            <li class="login-link">
+                            <li>
                                 <a class="login-link" href="login.html">Вход</a>
                             </li>
                         </ul>
@@ -114,44 +114,48 @@
             </div>
         </main>
         <footer class="main-footer">
-            <div class="footer-contacts">
-                <p>Барбершоп "Бородинский"<br>  
-                    Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8<br> 
-                    <a href="map.html">Как нас найти?</a><br>  
-                    Телефон +7(495)666-02-66
-                </p> 
-            </div>
-            <div class="social-media">
-                <b>Давайте дружить!</b>
-                <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
-                </ul>
-            </div>
-            <div class="footer-copyrite">
-                <p>Разработано:
-                    <a class="button" href="#">HTML ACADEMY</a>
-                </p>
+            <div class="container">
+                <div class="footer-contacts">
+                    <p>Барбершоп "Бородинский"<br>  
+                        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8<br> 
+                        <a href="map.html">Как нас найти?</a><br>  
+                        Телефон +7(495)666-02-66
+                    </p> 
+                </div>
+                <div class="social-media">
+                    <b>Давайте дружить!</b>
+                    <ul>
+                        <li><a class="social-button" href="#">Вконтакте</a></li>
+                        <li><a class="social-button" href="#">Фейсбук</a></li>
+                        <li><a class="social-button" href="#">Инстаграм</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyrite">
+                    <p>Разработано:
+                        <a class="button" href="#">HTML ACADEMY</a>
+                    </p>
+                </div>
             </div>
         </footer>
         <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p>Введите пожалуйста свой логин и пароль</p>
-            <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label class="visually-hidden" for="login-form-login">Логин</label>
-                    <input id="login-form-login" type="text" name="login" placeholder="Логин">
-                </p>
-                    <label class="visually-hidden" for="login-form-password">Пароль</label>
-                    <input id="login-form-password" type="password" name="password" placeholder="Пароль">
-                </p>
-                <p>
-                    <label class="login-checkbox"><input type="checkbox">Запомнить меня</label>
-                    <a href="#">Я забыл пароль!</a>
-                </p>
-                <button type="submit" class="button">Войти</button>
-            </form>
+            <div class="modal-login-wrapper">
+                <h2>Личный кабинет</h2>
+                <p>Введите пожалуйста свой логин и пароль</p>
+                <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
+                    <p>
+                        <label class="visually-hidden" for="login-form-login">Логин</label>
+                        <input id="login-form-login" type="text" name="login" placeholder="Логин">
+                    </p>
+                        <label class="visually-hidden" for="login-form-password">Пароль</label>
+                        <input id="login-form-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <label class="login-checkbox"><input type="checkbox">Запомнить меня</label>
+                        <a href="#">Я забыл пароль!</a>
+                    </p>
+                    <button type="submit" class="button">Войти</button>
+                </form>
+            </div>
             <button type="button" class="modal-close">Закрыть</button>
         </section>
         <section class="modal map">
