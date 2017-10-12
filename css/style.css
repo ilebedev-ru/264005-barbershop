@@ -827,14 +827,15 @@ p.login-checkbox {
 	list-style: none;
 }
 
-.filter-option {
+.filter-option,
+.filter-category {
 	position: relative;
 
 	margin-bottom: 17px;
 	padding-left: 43px;
 }
 
-.filter-option::before {
+.filter-option .checkbox-indicator {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -846,7 +847,58 @@ p.login-checkbox {
 	cursor: pointer;
 }
 
-.filter-option input:checked + label::before,
+.filter-option input:checked + .checkbox-indicator::before,
+.filter-option input:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	top: 7px;
+	right: 1px;
+
+	width: 14px;
+	height: 3px;
+
+	background-color: #000000;
+}
+
+.filter-option input:checked + .checkbox-indicator::before {
+	transform: rotate(45deg);
+}
+
+.filter-option input:checked + .checkbox-indicator::after {
+	transform: rotate(-45deg);
+}
+
+
+.filter-category .checkbox-indicator {
+	content: "";
+	position: absolute;
+	left: 0;
+
+	width: 18px;
+	height: 18px;
+
+	border: 2px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.filter-category input:checked + .checkbox-indicator::before
+ {
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+	width: 4px;
+	height: 4px;
+
+	background-color: #000000;
+	border: 2px solid #000000;
+	border-radius: 50%
+}
+
+
+/*.filter-option input:checked + label::before,
 .filter-option input:checked + label::after {
 	content: "";
 	position: absolute;
@@ -865,7 +917,7 @@ p.login-checkbox {
 
 .filter-option input:checked + label::after {
 	transform: rotate(-45deg);
-}
+}*/
 
 .filter-input:hover + label,
 .filter-input:focus + label {
