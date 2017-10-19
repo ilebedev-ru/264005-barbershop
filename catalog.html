@@ -17,7 +17,7 @@
                             <li><a href="info.html">Информация</a></li>
                             <li><a href="news.html">Новости</a></li>
                             <li><a href="price.html">Прайс-лист</a></li>
-                            <li><a href="catalog.html"><span class="main-menu-select">Магазин</span></a></li>
+                            <li><a><span class="main-menu-select">Магазин</span></a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>    
                         <ul class="main-enter">
@@ -222,8 +222,8 @@
                 <div class="footer-contacts">
                     <p>Барбершоп "Бородинский"<br>  
                         Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д 19/8<br> 
-                        <a href="map.html">Как нас найти?</a><br>  
-                        Телефон +7(495)666-02-66
+                        <a class="map-link" href="map.html">Как нас найти?</a><br>  
+                        Телефон +7 (495) 666-02-66
                     </p> 
                 </div>
                 <div class="social-media">
@@ -257,7 +257,7 @@
                 </div>
             </div>
         </footer>
-        <section class="modal modal-login modal-hidden">
+        <section class="modal modal-login">
             <h2>Личный кабинет</h2>
             <p class="modal-login-descr">Введите пожалуйста свой логин и пароль</p>
             <form class="login-form" action="http://echo.htmlacademy.ru" method="post">
@@ -279,10 +279,11 @@
             </form>
             <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </section>
-        <section class="modal map modal-hidden">
+        <section class="modal map">
             <h2 class="visually-hidden">Как к нам проехать</h2>
             <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="765" height="560">
             <button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
         </section>
+        <script src="js/barbershop.js"></script>
     </body>
 </html>
